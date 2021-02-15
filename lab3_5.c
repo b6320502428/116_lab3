@@ -18,5 +18,9 @@ int main()
     {
         printf("%d is a Lucky Number.",a);
     }
+    else
+    {
+        printf("%d is not a Lucky Number.",a);
+    }
     return 0;
 }
