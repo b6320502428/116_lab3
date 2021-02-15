@@ -27,7 +27,18 @@ int main()
             p=x;
             for(i=0;i<tmp/2;i++)
             {
-                if(s[i]!=s[tmp-i])
+                if(s[i]!=s[tmp-1-i])
+                {
+                    p=0;
+                }
+            }
+        }
+        else
+        {
+            p=x;
+            for(i=0;i<tmp/2;i++)
+            {
+                if(s[i]!=s[tmp-1-i])
                 {
                     p=0;
                 }
