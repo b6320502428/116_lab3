@@ -25,7 +25,7 @@ int main()
         else if(tmp%2==0)
         {
             p=x;
-            for(i=0;i<tmp/2;i++)
+            for(i=0; i<tmp/2; i++)
             {
                 if(s[i]!=s[tmp-1-i])
                 {
@@ -36,7 +36,7 @@ int main()
         else
         {
             p=x;
-            for(i=0;i<tmp/2;i++)
+            for(i=0; i<tmp/2; i++)
             {
                 if(s[i]!=s[tmp-1-i])
                 {
@@ -60,7 +60,34 @@ int main()
             }
             if(i==j)
             {
-                p1=i;
+                sprintf(s,"%d",x);
+                tmp=strlen(s);
+                if(tmp==1)
+                {
+                    p=x;
+                }
+                else if(tmp%2==0)
+                {
+                    p=x;
+                    for(i=0; i<tmp/2; i++)
+                    {
+                        if(s[i]!=s[tmp-1-i])
+                        {
+                            p=0;
+                        }
+                    }
+                }
+                else
+                {
+                    p=x;
+                    for(i=0; i<tmp/2; i++)
+                    {
+                        if(s[i]!=s[tmp-1-i])
+                        {
+                            p=0;
+                        }
+                    }
+                }
             }
             if(p1!=0)
             {
