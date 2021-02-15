@@ -16,6 +16,12 @@ int main()
     {
         p=x;
     }
+    i=2;
+    int xtmp1=x,xtmp2=x;
+    if(p==0)
+    {
 
+    }
+    printf("%d",p);
     return 0;
 }
