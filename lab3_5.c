@@ -1,20 +1,17 @@
 #include <stdio.h>
 int main()
 {
-    int n;
+    int n,tmp=2,num[3],i;
     scanf("%d",&n);
-    int k,tmp=2;//ดึงจากข้อ3
-    scanf("%d",&k);
-    while(k>1)
+    for(i=0;i<3;i++)
     {
-        while(k%tmp!=0)
+        while(n%tmp!=0)
         {
             tmp++;
         }
-        k=k/tmp;
-        printf("%d\n",tmp);
+        n=n/tmp;
+        num[i]=tmp;
         tmp=2;
     }
-    printf("0");
     return 0;
 }
