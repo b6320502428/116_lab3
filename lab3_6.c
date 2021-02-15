@@ -1,7 +1,9 @@
 #include <stdio.h>
+#include <string.h>
 int main()
 {
     int x,p1=0,p2=0,p=0,i=2,j=2,tmp,r1=0,r2=0;
+    char s[11]="";
     scanf("%d",&x);
     while(i<=x)
     {
@@ -14,7 +16,23 @@ int main()
     }
     if(x==i)
     {
-        p=x;
+        sprintf(s,"%d",x);
+        tmp=strlen(s);
+        if(tmp==1)
+        {
+            p=x;
+        }
+        else if(tmp%2==0)
+        {
+            p=x;
+            for(i=0;i<tmp/2;i++)
+            {
+                if(s[i]!=s[tmp-i])
+                {
+                    p=0;
+                }
+            }
+        }
     }
     if(p==0)
     {
