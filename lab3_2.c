@@ -7,7 +7,7 @@ int main()
     for (i=0;i<n;i++)
     {
         scanf("%d %d",&j,&k);
-        pt[j]=pt[j]+k;
+        pt[j-1]=pt[j-1]+k;
     }
     for (i=0;i<48;i++)
     {
