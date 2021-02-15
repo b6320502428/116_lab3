@@ -87,7 +87,23 @@ int main()
             }
             if(i==j)
             {
-                p2=i;
+                sprintf(s,"%d",i);
+                tmp=strlen(s);
+                if(tmp==1)
+                {
+                    p=i;
+                }
+                else
+                {
+                    p=i;
+                    for(j=0; j<tmp/2; j++)
+                    {
+                        if(s[j]!=s[tmp-1-j])
+                        {
+                            p=0;
+                        }
+                    }
+                }
             }
             if(p2!=0)
             {
