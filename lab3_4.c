@@ -1,7 +1,7 @@
 #include <stdio.h>
 int main()
 {
-    int x,p1=0,p2=0,p=0,i=2,j=2,tmp;
+    int x,p1=0,p2=0,p=0,i=2,j=2,tmp,r1=0,r2=0;
     scanf("%d",&x);
     while(i<=x)
     {
@@ -27,7 +27,7 @@ int main()
                 {
                     break;
                 }
-                i++;
+                j++;
             }
             if(i==j)
             {
@@ -37,6 +37,7 @@ int main()
             {
                 break;
             }
+            r1++;
         }
     }
     printf("%d",p);
