@@ -18,7 +18,11 @@ int main()
     }
     for(i=0; i<5; i++)
     {
-
+        if(max<st[i])
+        {
+            max=st[i];
+            win=i;
+        }
     }
     return 0;
 }
