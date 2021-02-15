@@ -16,11 +16,28 @@ int main()
     {
         p=x;
     }
-    i=2;
-    int xtmp1=x,xtmp2=x;
     if(p==0)
     {
-
+        for(i=x-1; i>0; i--)
+        {
+            while(j<=i)
+            {
+                tmp=i%j;
+                if(tmp==0)
+                {
+                    break;
+                }
+                i++;
+            }
+            if(i==j)
+            {
+                p1=i;
+            }
+            if(p1!=0)
+            {
+                break;
+            }
+        }
     }
     printf("%d",p);
     return 0;
