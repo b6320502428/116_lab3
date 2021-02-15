@@ -38,6 +38,7 @@ int main()
     {
         for(i=x-1; i>0; i--)
         {
+            j=2;
             while(j<=i)
             {
                 tmp=i%j;
@@ -75,8 +76,9 @@ int main()
             r1++;
         }
         j=2;
-        for(i=x+1; i; i++)
+        for(i=x+1; 1; i++)
         {
+            j=2;
             while(j<=i)
             {
                 tmp=i%j;
