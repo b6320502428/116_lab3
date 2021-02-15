@@ -39,6 +39,28 @@ int main()
             }
             r1++;
         }
+        j=2;
+        for(i=x+1; i; i++)
+        {
+            while(j<=i)
+            {
+                tmp=i%j;
+                if(tmp==0)
+                {
+                    break;
+                }
+                j++;
+            }
+            if(i==j)
+            {
+                p2=i;
+            }
+            if(p2!=0)
+            {
+                break;
+            }
+            r2++;
+        }
     }
     printf("%d",p);
     return 0;
