@@ -24,5 +24,6 @@ int main()
             win=i;
         }
     }
+    printf("%d %d",win+1,max);
     return 0;
 }
