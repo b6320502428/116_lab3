@@ -22,17 +22,6 @@ int main()
         {
             p=x;
         }
-        else if(tmp%2==0)
-        {
-            p=x;
-            for(i=0; i<tmp/2; i++)
-            {
-                if(s[i]!=s[tmp-1-i])
-                {
-                    p=0;
-                }
-            }
-        }
         else
         {
             p=x;
@@ -60,29 +49,18 @@ int main()
             }
             if(i==j)
             {
-                sprintf(s,"%d",x);
+                sprintf(s,"%d",i);
                 tmp=strlen(s);
                 if(tmp==1)
                 {
-                    p=x;
-                }
-                else if(tmp%2==0)
-                {
-                    p=x;
-                    for(i=0; i<tmp/2; i++)
-                    {
-                        if(s[i]!=s[tmp-1-i])
-                        {
-                            p=0;
-                        }
-                    }
+                    p=i;
                 }
                 else
                 {
-                    p=x;
-                    for(i=0; i<tmp/2; i++)
+                    p=i;
+                    for(j=0; j<tmp/2; j++)
                     {
-                        if(s[i]!=s[tmp-1-i])
+                        if(s[j]!=s[tmp-1-j])
                         {
                             p=0;
                         }
