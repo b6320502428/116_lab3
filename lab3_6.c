@@ -2,7 +2,7 @@
 #include <string.h>
 int main()
 {
-    int x,p1=0,p2=0,p=0,i=2,j=2,tmp,r1=0,r2=0;
+    int x,p1=0,p2=0,p=0,i=2,j=2,tmp,r1=0,r2=0,k;
     char s[11]="";
     scanf("%d",&x);
     while(i<=x)
@@ -49,20 +49,21 @@ int main()
             }
             if(i==j)
             {
+                strcpy(s,"");
                 sprintf(s,"%d",i);
                 tmp=strlen(s);
                 if(tmp==1)
                 {
-                    p=i;
+                    p1=i;
                 }
                 else
                 {
-                    p=i;
-                    for(j=0; j<tmp/2; j++)
+                    p1=i;
+                    for(k=0; k<tmp/2; k++)
                     {
-                        if(s[j]!=s[tmp-1-j])
+                        if(s[k]!=s[tmp-1-k])
                         {
-                            p=0;
+                            p1=0;
                         }
                     }
                 }
@@ -87,20 +88,21 @@ int main()
             }
             if(i==j)
             {
+                strcpy(s,"");
                 sprintf(s,"%d",i);
                 tmp=strlen(s);
                 if(tmp==1)
                 {
-                    p=i;
+                    p2=i;
                 }
                 else
                 {
-                    p=i;
-                    for(j=0; j<tmp/2; j++)
+                    p2=i;
+                    for(k=0; k<tmp/2; k++)
                     {
-                        if(s[j]!=s[tmp-1-j])
+                        if(s[k]!=s[tmp-1-k])
                         {
-                            p=0;
+                            p2=0;
                         }
                     }
                 }
