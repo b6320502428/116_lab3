@@ -61,6 +61,14 @@ int main()
             }
             r2++;
         }
+        if(r2<r1)
+        {
+            p=p2;
+        }
+        else
+        {
+            p=p1;
+        }
     }
     printf("%d",p);
     return 0;
